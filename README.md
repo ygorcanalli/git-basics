@@ -49,3 +49,12 @@ Para remover um arquivo do *staging area*, ou seja, não incluí-lo no próximo 
 git reset <meu-arquivo>
 ```
 
+## *Commitando* alterações
+
+Um *commit* é uma operação irreversível de atualização do repositório. Sendo assim, não é possível desfazer um commit, embora seja possível reverter o repositório para a versão anterior e prosseguir a partir dela, porém o *commit* em questão jamais deixará de fazer parte do histórico. Por isso, existe um estado intermediário, o *stating area*. É uma boa prática que cada *commit* seja uma alteração atômica, que diga respeito a somente uma coisa, para que seje possível rastrear cada modificação que o repositório passou. Para um exemplo, verifique o exemplo deste tutorial. É sempre aconselhável verificar o *staging area* antes de realizar um *commit*. Para *commitar* as alterações indicadas utilizamos o comando
+
+```
+git commit -m 'minha mensagem'
+```
+
+Também é possível realizar um commit sem indicar uma mensagem, neste caso será aberto um editor (em geral o `vi`) onde você deverá deixar uma mensagem que indique o que foi alterado no commit em questão. Após salvar e sair do editor, o git procederá à criação do *commit*.

@@ -176,3 +176,7 @@ A operação _merge_, que significa mesclar, se trata de mesclar as alterações
 Em nosso tutorial, realizaremos os merges através da funcionalidade `pull requests` do GitHub, que possui equivalentes em seus concorrentes. Um pull request é uma espécie de pedido de merge, que precisa ser aprovado para que as alterações entrem em vigor. Quando se trabalha em equipe, o ideia é que se faça toda vez que alguém for unir o código de um branch com suas atualizações ao `master`, para que o outro membro da equipe ou o responsável pelo código confira se a alteração é apropriada.
 
 Para criar um pull request, vá na aba 'Pull requests' no site do GitHub e utilize o botão 'New pull request'. Lá você deverá indicar de onde partem as alterações, e para onde eles serão levadas. Repare na direção da seta para saber de onde para onde o código será mesclado. Crie um Pull request do branch `lightside` para o `master`. Tendo feito o pull request, clique no botão `Merge` para efetivar a operação.
+
+### Resolvendo conflitos
+
+Ao tentar realizar um pull request do branch `darkside` para o `master` ocorrerá um conflito, pois existem conteúdos em parte do arquivo `force.md`. Prossiga à criação do Pull request, e aparecerá um botão para resolver o conflito. Este botão abre um editor de texto com o arquivo conflitante, indicando com marcações os trechos com problemas. Basta editar o arquivo posicionando cada conteúdo em seu devido lugar, e finalizando o GitGub criará um commit para esta alteração, e prosseguirá ao merge com sucesso.

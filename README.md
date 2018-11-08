@@ -65,7 +65,7 @@ O git permite que você tenha um repositório remoto, para onde você pode envia
 
 ### Adicionando um repositório remoto
 
-Para adicionar um repositório remoto, precisamos dar um nome a ele, que usualmente é `origin` e a URL remota. O exemplo abaixo adiciona um repositório remoto com o endereço deste tutorial. Você poderá fazer com qualquer repositório remoto que tenha criado.
+Para adicionar um repositório remoto, precisamos dar um nome a ele, que usualmente é `origin` e a URL remota. O exemplo abaixo adiciona um repositório remoto com o endereço deste tutorial. Você poderá fazer com qualquer repositório remoto que deseje. Caso ainda não possua um, sugiro criar um novo repositório no GitHub.
 
 ```
 git remote add origin https://github.com/ygorcanalli/git-basics.git

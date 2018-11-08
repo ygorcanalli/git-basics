@@ -58,3 +58,26 @@ git commit -m 'minha mensagem'
 ```
 
 Também é possível realizar um commit sem indicar uma mensagem, neste caso será aberto um editor (em geral o `vi`) onde você deverá deixar uma mensagem que indique o que foi alterado no commit em questão. Após salvar e sair do editor, o git procederá à criação do *commit*.
+
+## Repositórios remotos
+
+O git permite que você tenha um repositório remoto, para onde você pode enviar alterações e recuperá-las novamente no futuro. Em geral utilizamos como repositórios remotos serviços de nuvem como GitHub, GitLab e BitBucket.
+
+### Adicionando um repositório remoto
+
+Para adicionar um repositório remoto, precisamos dar um nome a ele, que usualmente é `origin` e a URL remota. O exemplo abaixo adiciona um repositório remoto com o endereço deste tutorial. Você poderá fazer com qualquer repositório remoto que tenha criado.
+
+```
+git remote add origin https://github.com/ygorcanalli/git-basics.git
+
+```
+
+### Enviando alterações com o comando _push_
+
+O comando _push_ envia seus commits para o repositório remoto. A primeira vez que utilizamos este comando, precisamos indicar para onde serão enviadas as alterações. Utilizamos o comando abaixo para enviar para o remote chamado `origin` no branch `master` (falaremos sobre branches mais adiante):
+
+```
+git push -u origin master
+```
+
+Tendo configurado o destino do remote, nas próximas vezes basta utilizar o comando `git push`, e seus commits serão enviados. Você pode alterar o destino novamente utilizando o comando anterior.

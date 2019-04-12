@@ -46,7 +46,7 @@ git add README.md
 Para remover um arquivo do *staging area*, ou seja, não incluí-lo no próximo *commit*, utilize o comando
 
 ```
-git checkout -- <meu-arquivo>
+git rm --cached <meu-arquivo>
 ```
 
 ## *Commitando* alterações
